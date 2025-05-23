@@ -1,0 +1,14 @@
+active_scanners:
+    - EurekaRadarSAST
+    - EurekaRadarSCA
+enforced_scanners:
+    - EurekaRadarSAST
+    - EurekaRadarSCA
+reports:
+  - uri: file://salus-report.sarif.json
+    format: sarif
+scanner_configs:
+  EurekaRadarSAST:
+    matches:
+      - config: 'auto'
+  EurekaRadarSCA:
