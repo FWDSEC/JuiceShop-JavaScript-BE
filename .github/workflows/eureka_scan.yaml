@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3        
-      - name: Run Eureka DevSecOps GitHub Action Scan
+      - name: Run Eureka DevSecOps GitHub Action Scan (w/ ASVS)
         uses: EurekaDevSecOps/scan-action@main
         env:    
           EUREKA_AGENT_TOKEN: ${{ secrets.EUREKA_AGENT_TOKEN }}
